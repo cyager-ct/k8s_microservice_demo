@@ -17,7 +17,10 @@ spec:
     spec:
       containers:
         - name: flaskapi
-          image: flask-demo-app
-          imagePullPolicy: Never
+          # image: flask-docker-demo-app
+          # imagePullPolicy: Never
+          image: 373669830907.dkr.ecr.us-east-1.amazonaws.com/flask-docker-demo-app:latest
+          imagePullPolicy: Always
           ports:
-            - containerPort: 5000
+            # - containerPort: 5000
+            - containerPort: 80
